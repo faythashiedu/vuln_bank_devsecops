@@ -134,7 +134,7 @@ Once running, access the application at:
 http://localhost:5000
 ```
 
-### Accessing the Application
+### Accessing the API documentation
 Once running, access the api documentation at:
 ```
 http://localhost:5000/api/docs
@@ -210,4 +210,7 @@ This application contains intentional security vulnerabilities for educational p
 
 ---
 Made with ❤️ for Security Education
+<<<<<<< HEAD
 >>>>>>> 7bca492 (Added a well written documentation.)
+=======
+>>>>>>> a6bc665 (Update README.md)
