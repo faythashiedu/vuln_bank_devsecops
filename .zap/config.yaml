@@ -1,0 +1,22 @@
+env:
+  contexts:
+    - name: "Vulnerable Bank"
+      urls: ["http://localhost:5000"]
+  
+  parameters:
+    failOnError: false
+    progressToStdout: true
+
+jobs:
+  - type: passiveScan-config
+    parameters:
+      maxAlertsPerRule: 10
+      
+  - type: spider
+    parameters:
+      url: "http://localhost:5000"
+      maxDuration: 1
+      
+  - type: passiveScan-wait
+    parameters:
+      maxDuration: 1

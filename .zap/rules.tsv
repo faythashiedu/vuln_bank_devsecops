@@ -1,0 +1,14 @@
+# .zap/rules.tsv
+10001	WARN	SQL Injection Checks
+10015	WARN	SQL Injection Timing Checks
+10024	WARN	Anti-CSRF Tokens Check
+10025	WARN	Proxy Disclosure
+10028	WARN	Open Redirect
+10031	WARN	User Controllable HTML Element Attribute
+10032	WARN	Viewstate Scanner
+10040	WARN	Cross Site Scripting
+10045	WARN	Source Code Disclosure
+10048	WARN	Remote Code Execution
+10095	WARN	Backup File Disclosure
+10105	WARN	Weak Authentication Method
+10202	WARN	Absence of Anti-CSRF Tokens

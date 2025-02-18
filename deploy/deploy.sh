@@ -12,7 +12,7 @@ SSH_KEY="${SSH_PRIVATE_KEY}"
 APP_NAME="vulnerable-bank"
 
 # Save SSH key
-echo "$SSH_KEY" > app_sec.pem
+echo "$SSH_KEY" | base64 --decode > app_sec.pem
 chmod 600 app_sec.pem
 
 # Build Docker image
