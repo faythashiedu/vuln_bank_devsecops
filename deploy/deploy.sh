@@ -28,13 +28,13 @@ echo "Copying files to EC2..."
 scp -i app_sec.pem \
     -o StrictHostKeyChecking=no \
     app.tar \
-    ubuntu@${EC2_HOST}:~/
+    ec2-user@${EC2_HOST}:~/
 
 # Deploy on EC2
 echo "Deploying on EC2..."
 ssh -i app_sec.pem \
     -o StrictHostKeyChecking=no \
-    ubuntu@${EC2_HOST} \
+    ec2-user@${EC2_HOST} \
     "docker load < app.tar && \
      docker stop $APP_NAME || true && \
      docker rm $APP_NAME || true && \
